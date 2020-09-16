@@ -1,0 +1,5 @@
+val = int(input())
+if(val%5==0):
+    print(int(val/5))
+else:
+    print(int(val/5)+1)    
