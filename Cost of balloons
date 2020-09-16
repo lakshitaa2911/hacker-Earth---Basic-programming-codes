@@ -1,0 +1,84 @@
+
+#include<stdio.h>
+
+int main()
+
+{
+
+    int t,g,p,n,i=0,s1,s2,n1=0,n2=0;
+
+    scanf("%d",&t);
+
+    while(t--)
+
+{ n1=0;
+
+n2=0;
+
+    scanf("%d %d",&g,&p);
+
+scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+
+    {
+
+        scanf("%d %d",&s1,&s2);
+
+        if(s1==1) n1++;
+
+     if(s2==1) n2++;
+
+        
+
+    }
+
+if(g>p)
+
+     {
+
+         if(n1>n2)
+
+         {
+
+             printf("%d\n",(n2*g)+(n1*p));
+
+         }
+
+         else
+
+         {
+
+             printf("%d\n",(n2*p)+(n1*g));
+
+         }
+
+     }
+
+     else //p>g
+
+     {
+
+if(n1>n2)
+
+         {
+
+             printf("%d\n",(p*n2)+(g*n1));
+
+         }
+
+         else
+
+         {
+
+printf("%d\n",(p*n1)+(g*n2));
+
+         }
+
+     }
+
+    
+
+}
+
+}
