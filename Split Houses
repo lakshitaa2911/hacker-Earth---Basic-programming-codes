@@ -1,0 +1,15 @@
+val = int(input())
+
+b = input()[:n]
+
+b = b.replace(".","B")
+
+if "HH" in b:
+
+    print("NO")
+
+else:
+
+    print("YES")
+
+    print(b)
