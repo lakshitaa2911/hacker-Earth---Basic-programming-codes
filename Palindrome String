@@ -1,0 +1,8 @@
+val = input()
+s = list(val)
+k = len(val)
+#for i in s:
+if (val==val[::-1]):
+    print('YES')
+else:
+    print('NO')
