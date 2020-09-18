@@ -1,0 +1,14 @@
+n = input()    
+
+sum = 0    
+
+for i in range(0, len(n)):         
+
+    sum += ( int( n[i] )*(i+1) )       
+
+
+if sum%11==0:
+    print('Legal ISBN')
+
+else:
+    print('Illegal ISBN')
