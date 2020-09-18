@@ -1,0 +1,19 @@
+n = int(input())
+for i in range(n):
+    n = n - i
+
+    if n<=0:
+
+        print('Patlu')
+
+        break
+
+    else:
+
+        n = n-2*i
+
+    if n <= 0:
+
+        print('Motu')
+
+        break
