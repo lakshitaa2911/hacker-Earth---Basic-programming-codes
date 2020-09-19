@@ -1,0 +1,25 @@
+a = 0
+
+b = 7
+
+for i in range(int(input())):
+
+    n = int(input())
+
+    if (b - n) < (n - b):
+
+        print("B")
+
+        b = n
+
+    elif(b - n) > (n - a):
+
+        print("A")
+
+        a = n
+
+    else:
+
+        print("A")
+
+        a = n
