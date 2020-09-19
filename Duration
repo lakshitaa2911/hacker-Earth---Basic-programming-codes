@@ -1,0 +1,10 @@
+n = int(input())
+for i in range(n):
+    a,b,c,d = list(map(int, input().split()))
+    e = a*60
+    f = c*60
+    diff = abs((b+e)-(f+d))
+    g = diff%60
+    h = int(diff/60)
+    print(h,g)
+    
