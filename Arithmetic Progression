@@ -1,0 +1,13 @@
+import math
+n = int(input())
+for i in range(n):
+    a,b,c =  map(int,input().split())
+    d = b-a
+    e = c-b
+    if(d-e==0):
+        print('0')
+    else:
+        print(math.ceil(abs(d-e)/2))
+    
+        
+    
