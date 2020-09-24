@@ -1,0 +1,13 @@
+n, t = list(map(int, input().split()))
+arr = list(map(int, input().split()))
+
+su = [0, ]
+
+for i in range(n):
+    su.append(su[i] + arr[i])
+
+for j in range(t):
+    l, r = list(map(int, input().split()))
+    f = (su[r] - su[l - 1]) // (r - l + 1)
+
+    print(f)
