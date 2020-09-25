@@ -1,0 +1,21 @@
+n=int(input())
+
+a=list(map(int,input().split()))
+
+x=[]
+
+f=-1
+
+s=sum(a)
+
+m=10**10 
+
+for i in range(n):
+
+     if((s-a[i])%7==0 and m>a[i]):
+
+                m=a[i]
+
+                f=i
+
+print(f)
