@@ -1,0 +1,43 @@
+for i in range (int(input())):     #This is for test case
+
+    n=int(input())                        #This is input 
+
+    x = int(0)
+
+    k=n%12
+
+    l=[[1,11],[2,9],[3,7],[4,5],[5,3],[6,1]]                
+
+    m=[[0,11],[11,9],[10,7],[9,5],[8,3],[7,1]]
+
+    for [i,j] in l:
+
+        if k in [i,j]:
+
+            if(k==i):
+
+                x=n+j
+
+
+    for [i,j] in m:
+
+        if k in [i,j]:
+
+            if(k==i):
+
+                x=n-j
+
+
+    if(k in [0,1,6,7]):
+
+        s='WS'
+
+    elif(k in [2,5,8,11]):
+
+        s='MS'
+
+    else:
+
+        s='AS'
+
+    print (x,s)
